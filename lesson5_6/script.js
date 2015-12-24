@@ -52,9 +52,7 @@ var Timer = function () {
 
     this.start = function () {
         document.getElementById('start').innerHTML = 'STOP';
-        //this.innerHTML = 'STOP';
         document.getElementById('start').onclick = timer.stop;
-        //this.onclick = timer.stop;
         timer.lastTimeStamp = new Date().getTime();
         timer.timer = window.setInterval(function () {
             var newTimeStamp = new Date().getTime();
@@ -67,9 +65,7 @@ var Timer = function () {
 
     this.stop = function() {
         document.getElementById('start').onclick = timer.start;
-        //this.onclick = timer.start;
         document.getElementById('start').innerHTML = 'START';
-        //this.innerHTML = 'START';
         window.clearInterval(timer.timer);
         timer.addInfo('stop');
     };
@@ -98,7 +94,7 @@ var Timer = function () {
     this.clearInfo = function() {
         var info = document.querySelectorAll('.info p');
         for (var i = 0; i < info.length; i++) {
-            info[i].remove();
+            info[i].parentNode.removeChild(info[i]);
         }
         this.stops = 0;
         this.splits = 0;
