@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <title>Best timer ever</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            text-align: center;
+            color: red;
+        }
+
+        .content {
+            margin-top: 100px;
+            text-align: center;
+        }
+
+        .buttons {
+            width: 200px;
+            margin: 20px auto;
+        }
+
+        .info {
+            text-align: center;
+        }
+
+        .info p {
+            font-size: 30px;
+        }
+
+        #hours, #minutes, #seconds, #milliseconds {
+            font-size: 40px;
+        }
+
+    </style>
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+<div class="header">
+    <h1>Best timer ever</h1>
+</div>
+
+<div class="content">
+    <div class="timer">
+        <button id="hours" type="button" class="btn btn-default btn-lg">00</button>
+        <button id="minutes" type="button" class="btn btn-default btn-lg">00</button>
+        <button id="seconds" type="button" class="btn btn-default btn-lg">00</button>
+        <button id="milliseconds" type="button" class="btn btn-default btn-lg">000</button>
+    </div>
+    <div class="buttons">
+        <button id="start" type="button" class="btn btn-primary btn-lg btn-block">START</button>
+        <button id="split" type="button" class="btn btn-primary btn-lg btn-block">SPLIT</button>
+        <button id="reset" type="button" class="btn btn-primary btn-lg btn-block">RESET</button>
+    </div>
+</div>
+<div class="info">
+
+
+</div>
+
+</body>
+</html>
