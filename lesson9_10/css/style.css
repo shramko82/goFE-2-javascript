@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+body {
+    background: #F0EFE7;
+    margin: 0;
+    padding: 0;
+    font: 15px/1.5 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #4E443C;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Arvo', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-align: center;
+    font-weight: normal;
+    text-rendering: optimizelegibility;
+}
+
+h1 {
+    color: #4E443C;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+h2, h2 a {
+    color: #F14E32;
+}
+
+h3, h3 a {
+    color: #0388A6;
+}
+
+a {
+    color: #0388A6;
+}
+
+pre {
+    border:1px solid #000;
+    overflow-x:auto;
+    background: #222;
+    color: #fff;
+    text-shadow: none;
+}
+
+.wrapper {
+    max-width: 620px;
+    padding: 0 20px 40px 20px;
+    margin: auto;
+}
+
+
+/*DROPDOWN MENU*/
+
+
+header * {
+    z-index: 1;
+}
+
+.menu_container {
+    background-color: #FF6464;
+    line-height: 50px;
+}
+
+.menu_container li {
+    list-style: none;
+    text-align: center;
+}
+
+.menu_container li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu_container li:hover {
+    background-color: red;
+}
+
+.menu {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.menu_item {
+    float: left;
+    width: 80px;
+}
+
+.inner {
+    position: absolute;
+
+    top: 50px;
+    left: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: all 0.2s ease-in-out;
+}
+
+.menu .visible {
+    background-color: rgba(255,0,0,.6);
+    transform: scaleY(1);
+}
+
+.inner-item {
+    float: none;
+    line-height: 40px;
+    width: 150px;
+    padding: 0 15px;
+}
+
+.inner-item a {
+    display: block;
+    text-align: left;
+}
+
+.inner-item:not(:last-child) a {
+    border-bottom: 1px solid red;
+}
+
+.submenu {
+    position: relative;
+}
+
+.submenu:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 25px;
+    right: 4px;
+    border-top: 5px solid #fff;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+
+.inner .submenu:after {
+    transform: rotate(-90deg);
+    right: 4px;
+    top: 20px;
+    margin-top: -2px;
+}
+
+.inner  .inner {
+    top: 0px;
+    left: 180px;
+}
+
+.main {
+    padding: 30px 0;
+}
+
+
+/*CHECKBOXES*/
+
+.demoTarget {
+    border: 0.0625em dashed #D1A449;
+    padding: 1em;
+    height: 30px;
+}
+
+
+.niceCheck {
+
+    width: 17px;
+
+    height: 17px;
+
+    display: inline-block;
+
+    cursor: pointer;
+
+    background: url(../img/checkbox.png);
+
+    overflow: hidden;
+
+}
+
+.niceChecked {
+
+    background-position: 0 -17px;
+
+}
+
+.niceCheck input {
+
+    margin-left: -1000px; /* можно задать побольше чтобы наверняка скрыть поле */
+
+}
+
+.niceCheckDisabled {
+
+    background-image: url(../img/checkbox-disabled.png);
+
+}

@@ -27,7 +27,7 @@
 .tooltip{
     width: 220px;
     display: inline-block;
-    border: 1px solid rgba(253, 148, 42, 0.41);
+    border: 1px solid rgba(255, 150, 50, 0.5);
     padding: 10px 20px;
     border-radius: 10px;
     opacity: 0;

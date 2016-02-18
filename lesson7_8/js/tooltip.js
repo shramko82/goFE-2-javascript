@@ -6,10 +6,9 @@ $(function(){
         .on('mouseout', function () {
             $(this).siblings('.tooltip').removeClass('show');
         });
-    $('.button')
-        .on('click', function (e) {
+    $('.button').on('click', function (e) {
             e.preventDefault();
             $('.tooltip').addClass('show');
-        });
+    });
 });
 
